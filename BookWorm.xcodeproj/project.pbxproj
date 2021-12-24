@@ -13,6 +13,9 @@
 		791D5EC2276F3A7D008A01A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791D5EC1276F3A7D008A01A1 /* Preview Assets.xcassets */; };
 		791D5ECA276F4130008A01A1 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 791D5EC8276F4130008A01A1 /* Bookworm.xcdatamodeld */; };
 		791D5ECC276F422B008A01A1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791D5ECB276F422B008A01A1 /* DataController.swift */; };
+		798961C92775F1740075B411 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798961C82775F1740075B411 /* AddBookView.swift */; };
+		798961CB2775FE130075B411 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798961CA2775FE130075B411 /* RatingView.swift */; };
+		798961CD277601000075B411 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798961CC277600FF0075B411 /* EmojiRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		791D5EC1276F3A7D008A01A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		791D5EC9276F4130008A01A1 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		791D5ECB276F422B008A01A1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		798961C82775F1740075B411 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		798961CA2775FE130075B411 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		798961CC277600FF0075B411 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 			children = (
 				791D5EBA276F3A7C008A01A1 /* BookWormApp.swift */,
 				791D5EBC276F3A7C008A01A1 /* ContentView.swift */,
+				798961CA2775FE130075B411 /* RatingView.swift */,
+				798961C82775F1740075B411 /* AddBookView.swift */,
+				798961CC277600FF0075B411 /* EmojiRatingView.swift */,
 				791D5EC8276F4130008A01A1 /* Bookworm.xcdatamodeld */,
 				791D5ECB276F422B008A01A1 /* DataController.swift */,
 				791D5EBE276F3A7D008A01A1 /* Assets.xcassets */,
@@ -145,8 +154,11 @@
 			files = (
 				791D5EBD276F3A7C008A01A1 /* ContentView.swift in Sources */,
 				791D5ECC276F422B008A01A1 /* DataController.swift in Sources */,
+				798961CD277601000075B411 /* EmojiRatingView.swift in Sources */,
 				791D5ECA276F4130008A01A1 /* Bookworm.xcdatamodeld in Sources */,
+				798961CB2775FE130075B411 /* RatingView.swift in Sources */,
 				791D5EBB276F3A7C008A01A1 /* BookWormApp.swift in Sources */,
+				798961C92775F1740075B411 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +297,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
