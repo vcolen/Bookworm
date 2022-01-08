@@ -20,14 +20,28 @@ struct DetailView: View {
                     .resizable()
                     .scaledToFit()
                 
-                Text(book.genre?.uppercased() ?? "FANTASY")
-                    .font(.caption)
-                    .fontWeight(.bold)
-                    .padding(8)
-                    .foregroundColor(.white)
-                    .background(.black.opacity(0.75))
-                    .clipShape(Capsule())
-                    .offset(x: -5, y: -5)
+                HStack {
+                    
+                    Text(book.date?.formatted(date: .abbreviated, time: .omitted) ?? Date.now.formatted(date: .abbreviated, time: .omitted))
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .padding(8)
+                        .foregroundColor(.white)
+                        .background(.black.opacity(0.75))
+                        .clipShape(Capsule())
+                        .offset(x: 5, y: -5)
+                    
+                    Spacer()
+                    
+                    Text(book.genre?.uppercased() ?? "FANTASY")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .padding(8)
+                        .foregroundColor(.white)
+                        .background(.black.opacity(0.75))
+                        .clipShape(Capsule())
+                        .offset(x: -5, y: -5)
+                }
             }
             
             Text(book.author ?? "Unknown Author")
@@ -60,9 +74,7 @@ struct DetailView: View {
     
     func deleteBook() {
         moc.delete(book)
-        
-        //try? moc.save()
-        
+        try? moc.save()
         dismiss()
     }
 }
